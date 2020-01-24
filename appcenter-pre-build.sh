@@ -32,14 +32,18 @@ APP_CONSTANT_FILE=$APPCENTER_SOURCE_DIRECTORY/sampleAppXamarin/AppConstant.cs
 if [ -e "$APP_CONSTANT_FILE" ]
 then
     echo "Updating ApiBaseUrl to $API_BASE_URL in AppConstant.cs"
-    #sed -i '' 's#ApiBaseUrl = "[-A-Za-z0-9:_./]*"#ApiBaseUrl = "'$API_BASE_URL'"#' $APP_CONSTANT_FILE
-    sed -i '' 's/"ApiBaseUrl">[a-zA-Z0-9#]*</"MaiApiBaseUrl">'$API_BASE_URL'</' $APP_CONSTANT_FILE
-    #sed -i '' 's#SitecoreBaseURL = "[-A-Za-z0-9:_./]*"#SitecoreBaseURL = "'$SITECORE_BASE_URL'"#' $APP_CONSTANT_FILE
-    sed -i '' 's/"SitecoreBaseURL">[a-zA-Z0-9#]*</"SitecoreBaseURL">'$SITECORE_BASE_URL'</' $APP_CONSTANT_FILE
-    #sed -i '' 's#IdamBaseUrl = "[-A-Za-z0-9:_./]*"#IdamBaseUrl = "'$IDAM_BASE_URL'"#' $APP_CONSTANT_FILE
-    sed -i '' 's/"IdamBaseUrl">[a-zA-Z0-9#]*</"IdamBaseUrl">'$IDAM_BASE_URL'</' $APP_CONSTANT_FILE
-    #sed -i '' 's#SubscriptionKey = "[-A-Za-z0-9:_./]*"#SubscriptionKey = "'$SUBSCRIPTION_KEY'"#' $APP_CONSTANT_FILE
-    sed -i '' 's/"SubscriptionKey">[a-zA-Z0-9#]*</"SubscriptionKey">'$SUBSCRIPTION_KEY'</' $APP_CONSTANT_FILE
+
+    
+ 
+    sed -i '' 's#ApiBaseUrl = "[-A-Za-z0-9:_./]*"#ApiBaseUrl = "'$API_BASE_URL'"#' $APP_CONSTANT_FILE
+    
+    sed -i '' 's#SitecoreBaseURL = "[-A-Za-z0-9:_./]*"#SitecoreBaseURL = "'$SITECORE_BASE_URL'"#' $APP_CONSTANT_FILE
+    
+    sed -i '' 's#IdamBaseUrl = "[-A-Za-z0-9:_./]*"#IdamBaseUrl = "'$IDAM_BASE_URL'"#' $APP_CONSTANT_FILE
+    
+    sed -i '' 's#SubscriptionKey = "[-A-Za-z0-9:_./]*"#SubscriptionKey = "'$SUBSCRIPTION_KEY'"#' $APP_CONSTANT_FILE
+
+
     #sed -i '' 's#TenantUrl = "[-A-Za-z0-9:_./]*"#TenantUrl = "'$TENANT_URL'"#' $APP_CONSTANT_FILE
     #sed -i '' 's#Scope = "[-A-Za-z0-9:_./]*"#Scope = "'$SCOPE'"#' $APP_CONSTANT_FILE
     #sed -i '' 's#ClientID = "[-A-Za-z0-9:_./]*"#ClientID = "'$CLIENT_ID'"#' $APP_CONSTANT_FILE
