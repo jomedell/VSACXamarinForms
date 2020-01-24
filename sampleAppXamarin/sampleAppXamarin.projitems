@@ -15,9 +15,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ButtonPage.xaml.cs">
       <DependentUpon>ButtonPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)AppConstant.cs">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)AppConstant.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
