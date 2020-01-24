@@ -13,7 +13,9 @@ namespace sampleAppXamarin
         {
             InitializeComponent();
 
+            //set user id
             AppCenter.SetUserId("jomedell");
+
         }
 
         async void Crash_Clicked(object sender, EventArgs e)
