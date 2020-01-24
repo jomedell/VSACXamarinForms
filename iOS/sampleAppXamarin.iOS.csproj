@@ -16,7 +16,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
-    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <DefineConstants>__IOS__;__MOBILE__;__UNIFIED__;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Developer: MSSPTBY MULTI (KS8CPKZWHW)</CodesignKey>
@@ -123,9 +123,6 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.4.4.0.991537\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
-    <Reference Include="Calabash">
-      <HintPath>..\packages\Xamarin.TestCloud.Agent.0.20.7\lib\Xamarin.iOS10\Calabash.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.AppCenter">
       <HintPath>..\packages\Microsoft.AppCenter.2.6.4\lib\Xamarin.iOS10\Microsoft.AppCenter.dll</HintPath>
     </Reference>
@@ -143,9 +140,6 @@
     </Reference>
     <Reference Include="Microsoft.AppCenter.Analytics.iOS.Bindings">
       <HintPath>..\packages\Microsoft.AppCenter.Analytics.2.6.4\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.iOS.Bindings.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.UITest">
-      <HintPath>..\packages\Xamarin.UITest.3.0.5\lib\portable-net45+win8+wp8\Xamarin.UITest.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
