@@ -9,6 +9,5 @@ namespace sampleAppXamarin
         public static string SitecoreBaseURL = "localSiteCoreBaseURL";
         public static string IdamBaseUrl = "localIdamBaseUrl";
         public static string SubscriptionKey = "localSubscriptionKey";
-        //public static string SubscriptionKey = "localSubscriptionKey";
     }
 }
