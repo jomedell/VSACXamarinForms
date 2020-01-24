@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Xamarin.Forms;
@@ -11,6 +12,8 @@ namespace sampleAppXamarin
         public ButtonPage()
         {
             InitializeComponent();
+
+            AppCenter.SetUserId("jomedell");
         }
 
         async void Crash_Clicked(object sender, EventArgs e)
