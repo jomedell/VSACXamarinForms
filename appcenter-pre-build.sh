@@ -27,7 +27,7 @@ fi
 
 echo "API_URL variable in App Center : $API_BASE_URL"
 
-APP_CONSTANT_FILE=$APPCENTER_SOURCE_DIRECTORY/Aps.Com.Helpers/AppConstant.cs
+APP_CONSTANT_FILE=$APPCENTER_SOURCE_DIRECTORY/sampleAppXamarin/AppConstant.cs
 
 if [ -e "$APP_CONSTANT_FILE" ]
 then
@@ -36,21 +36,21 @@ then
     sed -i '' 's#SitecoreBaseURL = "[-A-Za-z0-9:_./]*"#SitecoreBaseURL = "'$SITECORE_BASE_URL'"#' $APP_CONSTANT_FILE
     sed -i '' 's#IdamBaseUrl = "[-A-Za-z0-9:_./]*"#IdamBaseUrl = "'$IDAM_BASE_URL'"#' $APP_CONSTANT_FILE
     sed -i '' 's#SubscriptionKey = "[-A-Za-z0-9:_./]*"#SubscriptionKey = "'$SUBSCRIPTION_KEY'"#' $APP_CONSTANT_FILE
-    sed -i '' 's#TenantUrl = "[-A-Za-z0-9:_./]*"#TenantUrl = "'$TENANT_URL'"#' $APP_CONSTANT_FILE
-    sed -i '' 's#Scope = "[-A-Za-z0-9:_./]*"#Scope = "'$SCOPE'"#' $APP_CONSTANT_FILE
-    sed -i '' 's#ClientID = "[-A-Za-z0-9:_./]*"#ClientID = "'$CLIENT_ID'"#' $APP_CONSTANT_FILE
-    sed -i '' 's#RedirectUrl = "[-A-Za-z0-9:_./]*"#RedirectUrl = "'$REDIRECT_URL'"#' $APP_CONSTANT_FILE
-    sed -i '' 's#Environment = "[-A-Za-z0-9:_./]*"#Environment = "'$ENVIRONMENT'"#' $APP_CONSTANT_FILE
-    sed -i '' 's#SecretKeyAndroid = "[-A-Za-z0-9:_./]*"#SecretKeyAndroid = "'$APP_KEY_ANDROID'"#' $APP_CONSTANT_FILE
-    sed -i '' 's#SecretKeyiOS = "[-A-Za-z0-9:_./]*"#SecretKeyiOS = "'$APP_KEY_iOS'"#' $APP_CONSTANT_FILE
-    sed -i '' 's#ApiStatusCheckUrl = "[-A-Za-z0-9:_./]*"#ApiStatusCheckUrl = "'$API_STATUSCHECK_URL'"#' $APP_CONSTANT_FILE
-    sed -i '' 's#StatusCheckDRUrl = "[-A-Za-z0-9:_./]*"#StatusCheckDRUrl = "'$STATUSCHECK_DR_URL'"#' $APP_CONSTANT_FILE
-    sed -i '' 's#XFunctionKey = "[-A-Za-z0-9:_.&()!/]*"#XFunctionKey = "'${XKEY_FUNCTION//&/\\&}'"#' $APP_CONSTANT_FILE
-    sed -i '' 's#XDRFunctionKey = "[-A-Za-z0-9:_.&()!/]*"#XDRFunctionKey = "'${XDRKEY_FUNCTION//&/\\&}'"#' $APP_CONSTANT_FILE
-    sed -i '' 's#StatusCheckApiCode = "[-A-Za-z0-9:_.&()!/]*"#StatusCheckApiCode = "'${STATUSCHECK_CODE//&/\\&}'"#' $APP_CONSTANT_FILE
-    sed -i '' 's#DRStatusCheckApiCode = "[-A-Za-z0-9:_.&()!/]*"#DRStatusCheckApiCode = "'${DR_STATUSCHECK_DRAPI//&/\\&}'"#' $APP_CONSTANT_FILE
+    #sed -i '' 's#TenantUrl = "[-A-Za-z0-9:_./]*"#TenantUrl = "'$TENANT_URL'"#' $APP_CONSTANT_FILE
+    #sed -i '' 's#Scope = "[-A-Za-z0-9:_./]*"#Scope = "'$SCOPE'"#' $APP_CONSTANT_FILE
+    #sed -i '' 's#ClientID = "[-A-Za-z0-9:_./]*"#ClientID = "'$CLIENT_ID'"#' $APP_CONSTANT_FILE
+    #sed -i '' 's#RedirectUrl = "[-A-Za-z0-9:_./]*"#RedirectUrl = "'$REDIRECT_URL'"#' $APP_CONSTANT_FILE
+    #sed -i '' 's#Environment = "[-A-Za-z0-9:_./]*"#Environment = "'$ENVIRONMENT'"#' $APP_CONSTANT_FILE
+    #sed -i '' 's#SecretKeyAndroid = "[-A-Za-z0-9:_./]*"#SecretKeyAndroid = "'$APP_KEY_ANDROID'"#' $APP_CONSTANT_FILE
+    #sed -i '' 's#SecretKeyiOS = "[-A-Za-z0-9:_./]*"#SecretKeyiOS = "'$APP_KEY_iOS'"#' $APP_CONSTANT_FILE
+    #sed -i '' 's#ApiStatusCheckUrl = "[-A-Za-z0-9:_./]*"#ApiStatusCheckUrl = "'$API_STATUSCHECK_URL'"#' $APP_CONSTANT_FILE
+    #sed -i '' 's#StatusCheckDRUrl = "[-A-Za-z0-9:_./]*"#StatusCheckDRUrl = "'$STATUSCHECK_DR_URL'"#' $APP_CONSTANT_FILE
+    #sed -i '' 's#XFunctionKey = "[-A-Za-z0-9:_.&()!/]*"#XFunctionKey = "'${XKEY_FUNCTION//&/\\&}'"#' $APP_CONSTANT_FILE
+    #sed -i '' 's#XDRFunctionKey = "[-A-Za-z0-9:_.&()!/]*"#XDRFunctionKey = "'${XDRKEY_FUNCTION//&/\\&}'"#' $APP_CONSTANT_FILE
+    #sed -i '' 's#StatusCheckApiCode = "[-A-Za-z0-9:_.&()!/]*"#StatusCheckApiCode = "'${STATUSCHECK_CODE//&/\\&}'"#' $APP_CONSTANT_FILE
+    #sed -i '' 's#DRStatusCheckApiCode = "[-A-Za-z0-9:_.&()!/]*"#DRStatusCheckApiCode = "'${DR_STATUSCHECK_DRAPI//&/\\&}'"#' $APP_CONSTANT_FILE
     #sed -i '' 's#PWDPublicKey = "[-A-Za-z0-9:_.&()!/]*"#PWDPublicKey = "'${PWD_PUBLIC_KEY//&/\\&}'"#' $APP_CONSTANT_FILE
-    sed -i '' 's#CssUser = "[-A-Za-z0-9:_./]*"#CssUser = "'$CSS_USER'"#' $APP_CONSTANT_FILE
+    #sed -i '' 's#CssUser = "[-A-Za-z0-9:_./]*"#CssUser = "'$CSS_USER'"#' $APP_CONSTANT_FILE
     
 
     echo "File content:"
